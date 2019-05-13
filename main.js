@@ -30,14 +30,14 @@ function update() {
 
     course.draw(c);
     hole.draw(c);
-    ball.draw(c);
+
     c.fillStyle = "white"
     c.fillRect(0, 0, 495, canvas.height);
     c.fillRect(0, 0, canvas.width, 95);
     c.fillRect(655, 245, canvas.width, canvas.height);
     c.fillRect(855, 0, 860, canvas.height);
     c.fillRect(0, 545, canvas.width, canvas.height);
-
+    ball.draw(c);
 
 
     let gameOver = ball.update(mpos);
